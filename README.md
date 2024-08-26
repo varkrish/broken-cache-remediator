@@ -82,6 +82,13 @@ spring.jpa.properties.hibernate.cache.region.factory_class=org.broken.cacheremid
 spring.jpa.properties.hibernate.cache.use_second_level_cache=true
 spring.jpa.properties.hibernate.cache.use_query_cache=true
 ```
+### EAP settings
+
+If the persistence unit is being booted by EAP rather than Spring it will also need the property in `persistence.xml`
+
+``
+ <property name="wildfly.jpa.regionfactory" value="false"/>
+``
 
 ## Usage
 
